@@ -1,0 +1,154 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 25px;
+    background-color: rgb(239, 243, 247);
+    border-radius: 8px;
+    box-shadow: 0 2px 12px rgba(20, 20, 20, 0.1);
+
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Contenedor de botones */
+.botones-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.botones-container button {
+    padding: 12px 24px;
+    background-color: #1a237e;
+    color: rgb(241, 7, 7);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.botones-container button:hover {
+    background-color: #283593;
+    transform: translateY(-2px);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+/* Contenedor de formularios */
+.formulario-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Estilos compartidos para todos los contenedores */
+.contar-container,
+.interCambio-container,
+.positivoNegativoNulo-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 25px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+}
+
+/* Estilos de formularios */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-weight: bold;
+    color: #333;
+}
+
+input {
+    padding: 10px;
+    border: 2px solid #e0e0e0;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    outline: none;
+    border-color: #1a237e;
+}
+
+/* Botones dentro de formularios */
+form button {
+    padding: 12px;
+    background-color: #1a237e;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-size: 16px;
+}
+
+form button:hover {
+    background-color: #283593;
+}
+
+/* Contenedor de botones en formularios */
+.botones {
+    display: flex;
+    gap: 10px;
+}
+
+/* Resultados */
+.resultado-contador,
+.resultado-intercambio,
+.resultado-positivo-negativo {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 4px;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.mostrar-resultado {
+    opacity: 1;
+    background-color: #e8f5e9;
+    border: 1px solid #c8e6c9;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    color: #666;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .botones-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .botones-container button {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .contar-container,
+    .intercambio-container,
+    .positivo-negativo-container {
+        margin: 0 10px;
+    }
+} 
